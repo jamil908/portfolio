@@ -1,0 +1,63 @@
+[
+    {
+      
+      "img": "https://i.ibb.co/mcMwyXN/mextsteplogo.webp",
+      "title": "Project #1",
+      "name": "Full Stack Next Step Guide Frontend, built with Node.js and MongoDB.",
+      "description": "Welcome to Next Step Guide, a dynamic platform designed to make managing sports equipment effortless. With robust features like querying, recommendations, secure authentication, and a responsive design, this application simplifies inventory management and enhances user interaction.",
+      
+      "links": {
+        "site": "https://next-step-guide.web.app/",
+        "github": "https://github.com/jamil908/b10-a-11-client-side-public"
+      },
+      "id":1
+    },
+    {
+        
+      "img": "https://i.ibb.co/8NGLm30/5c6dcef8-32eb-4aa8-89f1-8ba509a9f3e2.webp",
+      "title": "Project #2",
+      "name": "A fullstack application built with Node.js and MongoDB.",
+      "description": "Welcome to Sports Equipment Inventory, a user-friendly platform designed to streamline your inventory management for sports equipment. With powerful sorting, dynamic tables, and secure user management, this app organizing sports gear easy and efficient.",
+     
+      "links": {
+        "site": "https://sports-equipment-3c8fc.web.app/",
+        "github": "https://github.com/programming-hero-web-course2/b10-a10-client-side-jamil908"
+      },
+      "id":2
+    },
+    {
+      "img": "https://i.ibb.co/VCdRNDN/41549245-aa57-4971-bc2b-acb4ede54fad.webp",
+      "title": "Project #3",
+      "name": "Career Counselling platform with various features.",
+      "description": "Welcome to Career Counseling, a platform designed to guide you toward achieving your professional goals. With personalized career advice, expert services, and user-friendly tools, Career Counseling is here to help you navigate your career path with confidence.",
+      "links": {
+        "site": "https://career-counseling-9f32e.web.app/",
+        "github": " https://github.com/programming-hero-web-course1/b10-a9-authentication-jamil908?tab=readme-ov-file"
+      },
+      "id":3
+    },
+    {
+      "img": "https://i.ibb.co/TcvJ5pg/DALL-E-2025-01-04-14-40-38-A-modern-and-futuristic-arrangement-featuring-a-laptop-mobile-phone-wirel.webp",
+      "title": "Project #4",
+      "name": "A mobile-friendly application using React Native.",
+      "description": "Welcome to Career Counseling, a platform designed to guide you toward achieving your professional goals. With personalized career advice, expert services, and user-friendly tools, Career Counseling is here to help you navigate your career path with confidence.",
+      
+      "links": {
+        "site": "https://gadget-haven-assignment-eight.netlify.app/",
+        "github": "https://github.com/programming-hero-web-course2/b10a8-gadget-heaven-jamil908"
+      },
+      "id":4
+    },
+    {
+      "img": "https://i.ibb.co/fdp4QYg/DALL-E-2025-01-04-14-50-54-A-modern-and-sleek-logo-design-for-BPL-featuring-bold-geometric-typograph.webp",
+      "title": "Project #5",
+      "name": "A data visualization project using D3.js and other libraries.",
+      "description": "BPL Team is a web application designed for cricket enthusiasts who want to experience the thrill of building and managing their own dream team for the Bangladesh Premier League (BPL). The platform allows users to browse players, view detailed stats, and purchase their favorite players to create a customized team lineup. It provides a fun and strategic way to engage with the game, making it more than just a spectator sport.",
+      "links": {
+        "site": "https://ph-batch-10-assignment-07.netlify.app/",
+        "github": "https://github.com/programming-hero-web-course1/b10a7-dream-11-jamil908"
+      },
+      "id":5
+    }
+  ]
+  

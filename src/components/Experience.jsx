@@ -37,7 +37,7 @@ const Experience = () => {
         animate="visible"
         >
             {experiences.map((experience, index) => (
-                <Reveal>
+                <Reveal key={index} >
                 <motion.div
                     key={index}
                     initial="hidden"

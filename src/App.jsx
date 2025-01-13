@@ -1,5 +1,7 @@
+
+import About from "./components/About";
 import Contact from "./components/Contact";
-import Experience from "./components/Experience";
+import Education from "./components/Education";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -9,13 +11,17 @@ import Skills from "./components/Skills";
 export default function App() {
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <Skills/>
-      <Portfolio/>
-      <Experience/>
+     <div className="  ">
+     <Navbar/>
+     <Hero/>
+     <About></About>
+     <Skills/>
+     <Education></Education>
+     <Portfolio/>
+     
       <Contact/>
-      <Footer/>
+      <Footer/> 
+     </div>
     </>
   )
 }

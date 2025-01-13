@@ -6,6 +6,9 @@
 body {
   font-family: "Space Grotesk", sans-serif;
   background-color: #190b1f;
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
@@ -22,6 +25,7 @@ span {
 
 
 .shiny-effect {
+
   position: absolute;
   border-radius: 50%;
   pointer-events: none;

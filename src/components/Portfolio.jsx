@@ -1,100 +1,70 @@
-import React from 'react';
-import project1 from "../assets/project1.png"
-import project2 from "../assets/project2.png"
-import project4 from "../assets/project4.png"
-import project5 from "../assets/project5.png"
-import project6 from "../assets/project6.png"
-import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai'
-import Reveal from './Reveal';
-
-const projects = [
-    {
-      img: project1,
-      title: "Project #1",
-      description: "UI for frontend development using React.",
-      links: {
-        site: "#",
-        github: "#",
-      },
-    },
-    {
-      img: project2,
-      title: "Project #2",
-      description: "A fullstack application built with Node.js and MongoDB.",
-      links: {
-        site: "#",
-        github: "#",
-      },
-    },
-    {
-      img: project4,
-      title: "Project #3",
-      description: "An e-commerce platform with various features.",
-      links: {
-        site: "#",
-        github: "#",
-      },
-    },
-    {
-      img: project5,
-      title: "Project #4",
-      description: "A mobile-friendly application using React Native.",
-      links: {
-        site: "#",
-        github: "#",
-      },
-    },
-    {
-      img: project6,
-      title: "Project #5",
-      description: "A data visualization project using D3.js and other libraries.",
-      links: {
-        site: "#",
-        github: "#",
-      },
-    },
-  ]
+import { AiOutlineGithub } from "react-icons/ai";
+import Reveal from "./Reveal";
+import { Link } from "react-router-dom";
+import projects from "/public/project.json";
 
 const Portfolio = () => {
   return (
-    <div className='max-w-[1000px] mx-auto p-6 md:my-20' id="portfolio">
-        <h2 className='text-3xl font-bold text-gray-200 mb-8'>Portfolio</h2>
+    <div className="max-w-[1200px] mx-auto py-16 px-6 md:py-24" id="portfolio" >
+      {/* Section Title */}
+      <h2 className="text-5xl font-extrabold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+        My Portfolio
+      </h2>
+
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
-            <Reveal>
-            <div key={index} 
-            className={`flex flex-col md:flex-row ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} mb-12`}>
-                <div className='w-full md:w-1/2 p-4'>
-                    <img
-                        src={project.img}
-                        alt={project.title}
-                        className='w-full h-full object-cover rounded-lg shadow-lg'
-                    />
+          <Reveal key={index}>
+            <div
+              className={`relative flex flex-col items-center rounded-xl overflow-hidden  border-gray-700 p-6  bg-gradient-to-br from-purple-900/20 to-gray-800 shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300`}
+            >
+              {/* Image Section */}
+              <div className=" md:w-full w-[80%] h-[80%] md:h-full  overflow-hidden">
+                <img
+                  src={project.img}
+                  alt={project.title}
+                  className="w-full h-full md:w-[400px] md:h-[400px] object-cover rounded-t-lg transition-transform duration-300 hover:scale-110"
+                />
+              </div>
+
+              {/* Content Section */}
+              <div className="p-6 flex flex-col items-start space-y-4 w-full">
+                <h3 className="text-2xl font-bold text-purple-400 hover:text-pink-500 transition-colors duration-300">
+                  {project.title}
+                </h3>
+                <p className="text-gray-300 text-lg">{project.name}</p>
+                <div className="flex flex-wrap gap-4 mt-4">
+                  {/* View Site Button */}
+                  <Link
+                    to={project.links.site}
+                    className="px-6 py-2 bg-purple-600 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-pink-500 transition duration-300"
+                  >
+                    View Site
+                  </Link>
+                  {/* GitHub Button */}
+                  <Link
+                    to={project.links.github}
+                    className="flex items-center px-6 py-2 bg-gray-700 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-gray-600 transition duration-300"
+                  >
+                    <AiOutlineGithub className="mr-2 text-xl" />
+                    GitHub
+                  </Link>
+                  {/* View Details Button */}
+                  <Link
+                    to={`/projects/${project.id}`}
+                    className="px-6 py-2 bg-purple-600 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-pink-500 transition duration-300"
+                  >
+                    View Details
+                  </Link>
+                
                 </div>
-                <div className='w-full md:w-1/2 p-4 flex flex-col justify-center'>
-                    <h3 className='text-2xl font-semibold text-gray-200 mb-4'>{project.title}</h3>
-                    <p className='text-gray-300 mb-4'>{project.description}</p>
-                    <div className='flex space-x-4'>
-                        <a href={project.links.site}
-                            className='px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700
-                                        transition duration-300'>
-                            View Site
-                        </a>
-                        <a href={project.links.github}
-                            className='px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700
-                                        transition duration-300'>
-                            <AiOutlineGithub/>
-                        </a>
-
-                    </div>
-
-                </div>
-
+              </div>
             </div>
-            </Reveal>
+          </Reveal>
         ))}
-        
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

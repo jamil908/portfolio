@@ -1,95 +1,83 @@
-import React from "react"
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai"
-import { motion } from "framer-motion"
-import Reveal from "./Reveal"
+import { BsWhatsapp } from "react-icons/bs";
+import { PiPhoneCall } from "react-icons/pi";
+import Reveal from "./Reveal";
 
 const Contact = () => {
   return (
-    <div className="px-6 max-w-[1000px] mx-auto md:my-12" id="contact">
-        <Reveal>
-        <div className="grid md:grid-cols-2 place-items-center">
-            <div>
-                <div className="text-gray-300 my-3">
-                    <h3 className="text-4xl font-semibold mb-5">About <span>Me</span></h3>
-                    <p className="text-justify leading-7 w-11/12 mx-auto">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                        eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                        ratione quibusdam doloribus pariatur consequuntur sint.
-                        Reprehenderit cupiditate possimus facere quasi voluptatem?
-                    </p>
-                </div>
-
-                <div className="flex mt-10 items-center gap-7">
-                    <div className="bg-gray-800/40 p-4 rounded-lg">
-                        <h3 className="md:text-4xl text-2xl font-semibold text-white">11
-                            <span>+</span>
-                        </h3>
-                        <p className="text-xs md:text-base"><span>Projects</span></p>
-                    </div>
-
-                    <div className="bg-gray-800/40 p-5 rounded-lg">
-                        <h3 className="md:text-4xl text-2xl font-semibold text-white">5
-                            <span>+</span>
-                        </h3>
-                        <p className="text-xs md:text-base"><span>years of experience</span></p>
-                    </div>
-
-                    <div className="bg-gray-800/40 p-5 rounded-lg">
-                        <h3 className="md:text-4xl text-2xl font-semibold text-white">30
-                            <span>+</span>
-                        </h3>
-                        <p className="text-xs md:text-base"><span>happy clients</span></p>
-                    </div>
-
-                </div>
-
+    <div className="px-6 max-w-[1300px] mx-auto md:mb-4" id="contact">
+      <Reveal>
+        <div className="grid md:grid-cols-2 gap-8 place-items-center">
+          {/* Contact Information */}
+          <div className="flex flex-col items-center text-center text-white space-y-4">
+            <h2 className="text-2xl font-bold text-purple-500 mb-4">Get in Touch</h2>
+            <div className="flex flex-col items-center space-y-2">
+              {/* Phone */}
+              <a
+                href="tel:+8801781142856"
+                className="flex items-center gap-2 text-lg hover:text-purple-300 transition-all duration-300"
+              >
+                <PiPhoneCall size={24} />
+                <span>+880 1781 142856</span>
+              </a>
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/8801781142856"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-lg hover:text-green-400 transition-all duration-300"
+              >
+                <BsWhatsapp size={24} />
+                <span>WhatsApp</span>
+              </a>
+              {/* Email */}
+              <a
+                href="mailto:md3711451@gmail.com"
+                className="flex items-center gap-2 text-lg hover:text-blue-300 transition-all duration-300"
+              >
+                📧 md3711451@gmail.com
+              </a>
             </div>
+          </div>
 
-            <form
-                action="https://getform.io/f/placeYourEndpointHere"
-                method="POST"
-                className=" max-w-6xl p-5 md:p-12"
-                id="form"
-            >
-            <p className="text-gray-100 font-bold text-xl mb-2">
-              Let´s connect!
-            </p>
+          {/* Contact Form */}
+          <form className="w-full max-w-6xl p-5 md:p-12  rounded-md shadow-lg" id="form">
+            <p className="text-gray-100 font-bold text-xl mb-4">Let´s connect!</p>
             <input
-                type="text"
-                id="name"
-                placeholder="Your Name ..."
-                name="name"
-                className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
+              type="text"
+              id="name"
+              placeholder="Your Name ..."
+              name="name"
+              required
+              className="mb-4 w-full rounded-md border border-purple-600 py-2 pl-4 pr-4 bg-gray-900 text-gray-100 focus:ring-2 focus:ring-purple-500 focus:outline-none"
             />
             <input
               type="email"
               id="email"
               placeholder="Your Email ..."
               name="email"
-              className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
+              required
+              className="mb-4 w-full rounded-md border border-purple-600 py-2 pl-4 pr-4 bg-gray-900 text-gray-100 focus:ring-2 focus:ring-purple-500 focus:outline-none"
             />
             <textarea
-              name="textarea"
               id="textarea"
+              name="textarea"
+              required
               cols="30"
               rows="4"
               placeholder="Your Message ..."
-              className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
+              className="mb-4 w-full rounded-md border border-purple-600 py-2 pl-4 pr-4 bg-gray-900 text-gray-100 focus:ring-2 focus:ring-purple-500 focus:outline-none"
             />
             <button
               type="submit"
-              className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-primary-color"
+              className="w-full py-3 rounded-md text-white font-semibold text-xl bg-purple-600 hover:bg-purple-700 transition-all duration-300"
             >
               Send Message
             </button>
-            
           </form>
-
         </div>
-        
-        </Reveal>
+      </Reveal>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

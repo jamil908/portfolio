@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "degree": "Bachelor of Science in Computer Science and Engineering",
+      "institution": "Premier University",
+      "duration": "2022 - 4th semester running",
+      "description": "Pursuing a degree with a focus on software development, algorithms, and web technologies."
+    },
+    {
+      "id": 2,
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "Ramgonj Govt College",
+      "duration": "2018 - 2020",
+      "description": "Major in Science with an emphasis on Mathematics, Physics, and Chemistry."
+    },
+    {
+      "id": 3,
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "Ramgonj High School",
+      "duration": "2016 - 2017",
+      "description": "Completed secondary education with top grades in Science."
+    }
+  ]
+  
