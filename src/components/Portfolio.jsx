@@ -12,7 +12,7 @@ const Portfolio = () => {
       </h2>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <Reveal key={index}>
             <div
@@ -37,14 +37,14 @@ const Portfolio = () => {
                   {/* View Site Button */}
                   <Link
                     to={project.links.site}
-                    className="px-6 py-2 bg-purple-600 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-pink-500 transition duration-300"
+                    className="px-6 py-2 border-fuchsia-600 border-2 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-pink-500 transition duration-300"
                   >
                     View Site
                   </Link>
                   {/* GitHub Button */}
                   <Link
                     to={project.links.github}
-                    className="flex items-center px-6 py-2 bg-gray-700 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-gray-600 transition duration-300"
+                    className="flex items-center px-6 py-2 border-fuchsia-600 border-2 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-gray-600 transition duration-300"
                   >
                     <AiOutlineGithub className="mr-2 text-xl" />
                     GitHub
@@ -52,7 +52,7 @@ const Portfolio = () => {
                   {/* View Details Button */}
                   <Link
                     to={`/projects/${project.id}`}
-                    className="px-6 py-2 bg-purple-600 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-pink-500 transition duration-300"
+                    className="px-6 py-2 border-fuchsia-600 border-2 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-pink-500 transition duration-300"
                   >
                     View Details
                   </Link>

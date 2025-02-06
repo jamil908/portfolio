@@ -31,8 +31,8 @@ const About = () => {
 
             </div>
             <p className='text-fuchsia-600 md:mt-5 mt-2 md:text-4xl text-xl font-bold animate-pulse w-fit mx-auto'>My Tech Stack</p>
-        <div className=' w-[100vw]  md:w-9/12 mx-auto'>
-        <div className=" md:w-9/12 w-[100vw] overflow-hidden">
+        <div className=' w-[100vw]  md:w-[100%] mx-auto'>
+        <div className=" md:w-[100%] w-[100vw] overflow-hidden">
           <Marquee
             speed={70}
             gradient={true}
@@ -91,13 +91,7 @@ const About = () => {
                 />
                 <span>DaisyUI</span>
               </div>
-              <div>
-                <SiTypescript
-                  className="text-blue-400 animate-pulse"
-                  style={{ height: "120px", width: "120px" }}
-                />
-                <span>TypeScript</span>
-              </div>
+            
               <div>
                 <SiExpress
                   className="text-green-400 animate-pulse"
