@@ -27,7 +27,7 @@ const Hero = () => {
             sequence={[
               "Junior",
               1000,
-              "Frontend Developer",
+              "Mernstack Developer",
               1000,
               "Webdesigner",
               1000,
@@ -57,7 +57,7 @@ const Hero = () => {
             className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-2xl max-w-md mx-auto md:mx-0 mb-6"
           >
             I am a junior{" "}
-            <span className="text-purple-300 font-bold">Frontend</span>{" "}
+            <span className="text-purple-300 font-bold">Mernstack</span>{" "}
             developer.
           </motion.p>
 
@@ -73,7 +73,7 @@ const Hero = () => {
                 scale: 1.05,
                 boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
               }}
-              href="/public/MD_Jamil_Hossain_Front-end_web-developer (2).pdf"
+              href="/MD_Jamil_Hossain_Front-end_web-developer (2).pdf"
               download="MD_Jamil_Hossain_Front-end_web-developer (2).pdf"
               className="z-10 cursor-pointer font-bold text-gray-200 text-sm md:text-base lg:text-lg px-4 py-2 border border-purple-400 rounded-xl"
             >

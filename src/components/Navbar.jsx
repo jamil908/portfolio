@@ -34,8 +34,8 @@ const Navbar = () => {
   return (
 
     
-    <div className="fixed top-0  container mx-auto bg-opacity-70 bg-inherit backdrop-blur-md z-50">
-      <div className="flex justify-between items-center w-[90%] mx-auto h-20 text-gray-200 text-xl px-4 md:px-12">
+    <div className="fixed top-0 container mx-auto bg-opacity-70 bg-inherit backdrop-blur-md z-50">
+      <div className="flex  items-center justify-between  mx-auto h-20 text-gray-200 text-xl px-4 md:px-12">
         {/* Logo */}
         <a href="#" className="font-bold text-lg md:text-2xl">
           Jamil Hossain
@@ -95,7 +95,7 @@ const Navbar = () => {
             scale: 1.05,
             boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.3)',
           }}
-          href="/public/MD_Jamil_Hossain_Front-end_web-developer (2).pdf"
+          href="/MD_Jamil_Hossain_Front-end_web-developer (2).pdf"
           download="MD_Jamil_Hossain_Front-end_web-developer (2).pdf"
           className="hidden md:block cursor-pointer font-bold text-gray-200 p-3 border border-purple-400 rounded-lg hover:bg-purple-500 transition-all duration-300"
         >
@@ -169,8 +169,8 @@ const Navbar = () => {
                   scale: 1.05,
                   boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.3)',
                 }}
-                href="/public/Jamil_Hossain_CV.pdf"
-                download="Jamil_Hossain_CV.pdf"
+                href="/MD_Jamil_Hossain_Front-end_web-developer (2).pdf"
+                download="MD_Jamil_Hossain_Front-end_web-developer (2).pdf"
                 className="cursor-pointer font-bold text-gray-200 p-3 border border-purple-400 rounded-lg hover:bg-purple-500 transition-all duration-300"
               >
                 Download CV
