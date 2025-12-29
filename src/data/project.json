@@ -1,0 +1,79 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co.com/1Y2rTzP5/screencapture-local-guide-frontend-orcin-vercel-app-2025-12-29-14-35-28.png",
+      "title": "Local Guide Tour Management",
+      "name": "Full Stack Tour Management Platform",
+      "description": "A comprehensive tour management platform built with Next.js and Prisma, featuring real-time booking, guide management, and secure payment processing. Includes admin dashboard, user authentication, and responsive design for seamless user experience.",
+      "category": "fullstack",
+      "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "TypeScript"],
+      "liveUrl": "https://local-guide-frontend-orcin.vercel.app/",
+      "githubUrl": "https://github.com/jamil908/local-guide-platform-frontencd"
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/Gv5V9yDn/Screenshot-2025-05-23-005045.png",
+      "title": "Medicine Vendor Platform",
+      "name": "Pharmaceutical Inventory Management System",
+      "description": "A comprehensive platform for managing pharmaceutical inventories, showcasing advertised products, and generating detailed sales reports. Features dynamic querying, real-time stock updates, and advanced analytics dashboard.",
+      "category": "fullstack",
+      "technologies": ["Node.js", "MongoDB", "Express.js", "React", "Chart.js"],
+      "liveUrl": "https://medicine-for-you.web.app/",
+      "githubUrl": "https://github.com/jamil908/medicine-vendor-client-side"
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/mcMwyXN/mextsteplogo.webp",
+      "title": "Next Step Guide",
+      "name": "Sports Equipment Management Platform",
+      "description": "A dynamic platform designed to make managing sports equipment effortless. With robust features like querying, recommendations, secure authentication, and responsive design for enhanced user interaction.",
+      "category": "fullstack",
+      "technologies": ["Node.js", "MongoDB", "React", "Firebase", "Tailwind CSS"],
+      "liveUrl": "https://next-step-guide.web.app/",
+      "githubUrl": "https://github.com/jamil908/b10-a-11-client-side-public"
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/8NGLm30/5c6dcef8-32eb-4aa8-89f1-8ba509a9f3e2.webp",
+      "title": "Sports Equipment Inventory",
+      "name": "Inventory Management System",
+      "description": "A user-friendly platform designed to streamline inventory management for sports equipment. Features powerful sorting, dynamic tables, and secure user management for efficient organization.",
+      "category": "fullstack",
+      "technologies": ["Node.js", "MongoDB", "React", "Express.js", "JWT"],
+      "liveUrl": "https://sports-equipment-3c8fc.web.app/",
+      "githubUrl": "https://github.com/programming-hero-web-course2/b10-a10-client-side-jamil908"
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/VCdRNDN/41549245-aa57-4971-bc2b-acb4ede54fad.webp",
+      "title": "Career Counseling Platform",
+      "name": "Professional Career Guidance System",
+      "description": "A platform designed to guide users toward achieving their professional goals. Features personalized career advice, expert services, and user-friendly tools for career navigation.",
+      "category": "frontend",
+      "technologies": ["React", "Firebase", "Tailwind CSS", "React Router", "Context API"],
+      "liveUrl": "https://career-counseling-9f32e.web.app/",
+      "githubUrl": "https://github.com/programming-hero-web-course1/b10-a9-authentication-jamil908"
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/TcvJ5pg/DALL-E-2025-01-04-14-40-38-A-modern-and-futuristic-arrangement-featuring-a-laptop-mobile-phone-wirel.webp",
+      "title": "Gadget Heaven",
+      "name": "E-Commerce Electronics Store",
+      "description": "A modern e-commerce platform for electronics and gadgets. Features product catalog, shopping cart, wishlist functionality, and responsive design for optimal user experience.",
+      "category": "frontend",
+      "technologies": ["React", "Context API", "React Router", "Tailwind CSS", "LocalStorage"],
+      "liveUrl": "https://gadget-haven-assignment-eight.netlify.app/",
+      "githubUrl": "https://github.com/programming-hero-web-course2/b10a8-gadget-heaven-jamil908"
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/fdp4QYg/DALL-E-2025-01-04-14-50-54-A-modern-and-sleek-logo-design-for-BPL-featuring-bold-geometric-typograph.webp",
+      "title": "BPL Team Manager",
+      "name": "Cricket Team Management System",
+      "description": "A web application for cricket enthusiasts to build and manage their dream team for the Bangladesh Premier League. Features player browsing, detailed stats, and team customization.",
+      "category": "frontend",
+      "technologies": ["React", "JavaScript", "Tailwind CSS", "React Hooks", "JSON"],
+      "liveUrl": "https://ph-batch-10-assignment-07.netlify.app/",
+      "githubUrl": "https://github.com/programming-hero-web-course1/b10a7-dream-11-jamil908"
+    }
+]

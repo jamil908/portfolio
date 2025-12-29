@@ -73,7 +73,7 @@ const Hero = () => {
                 scale: 1.05,
                 boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
               }}
-              href="/MD_Jamil_Hossain_Front-end_web-developer (2).pdf"
+              href="/Resume.pdf"
               download="MD_Jamil_Hossain_Front-end_web-developer (2).pdf"
               className="z-10 cursor-pointer font-bold text-gray-200 text-sm md:text-base lg:text-lg px-4 py-2 border border-purple-400 rounded-xl"
             >
@@ -81,9 +81,10 @@ const Hero = () => {
             </motion.a>
 
             <div className="flex gap-6 text-3xl sm:text-4xl md:text-5xl text-purple-400">
+            
               <motion.a
                 whileHover={{ scale: 1.2 }}
-                href="https://www.linkedin.com/in/jamil-hossain-rafi-86780633b"
+                href="https://www.linkedin.com/in/jamil-hossain-rafi-05feb/"
               >
                 <AiOutlineLinkedin />
               </motion.a>

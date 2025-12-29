@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Local Guide Tour Management",
+    "name": "Full Stack Tour Management Platform",
+    "description": "A comprehensive tour management platform built with Next.js and Prisma, featuring real-time booking, guide management, and payment processing. Includes admin dashboard, user authentication, and responsive design.",
+    "img": "https://i.ibb.co.com/1Y2rTzP5/screencapture-local-guide-frontend-orcin-vercel-app-2025-12-29-14-35-28.png",
+    "category": "fullstack",
+    "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "TypeScript"],
+    "features": [
+      "Real-time booking system",
+      "Guide management dashboard",
+      "Payment integration",
+      "User authentication",
+      "Responsive design"
+    ],
+    "liveUrl": "https://local-guide-frontend-orcin.vercel.app/",
+    "githubUrl": "https://github.com/jamil908/local-guide-platform-frontencd",
+    "status": "completed",
+    "duration": "3 months",
+    "challenges": "Implementing real-time booking conflicts resolution and payment gateway integration",
+    "solutions": "Used WebSocket for real-time updates and Stripe for secure payment processing"
+  },
+  {
+    "id": 2,
+    "title": "Medicine Vendor Platform",
+    "name": "Pharmaceutical Inventory Management System",
+    "description": "A comprehensive platform for managing pharmaceutical inventories, showcasing advertised products, and generating sales reports. Features dynamic querying, product management, and sales analytics.",
+    "img": "https://i.ibb.co/Gv5V9yDn/Screenshot-2025-05-23-005045.png",
+    "category": "fullstack",
+    "technologies": ["Node.js", "MongoDB", "Express.js", "React", "Chart.js"],
+    "features": [
+      "Inventory management",
+      "Sales analytics",
+      "Product advertising",
+      "Dynamic search and filtering",
+      "Report generation"
+    ],
+    "liveUrl": "#",
+    "githubUrl": "#",
+    "status": "completed",
+    "duration": "2 months",
+    "challenges": "Complex inventory tracking and real-time stock updates",
+    "solutions": "Implemented MongoDB change streams for real-time inventory updates"
+  },
+  {
+    "id": 3,
+    "title": "E-Commerce Dashboard",
+    "name": "Modern Admin Dashboard",
+    "description": "A sleek and responsive admin dashboard for e-commerce management with real-time analytics, order tracking, and inventory management.",
+    "img": "/src/assets/project3.png",
+    "category": "frontend",
+    "technologies": ["React", "TypeScript", "Tailwind CSS", "Chart.js", "Framer Motion"],
+    "features": [
+      "Real-time analytics",
+      "Order management",
+      "Inventory tracking",
+      "User management",
+      "Dark/Light mode"
+    ],
+    "liveUrl": "#",
+    "githubUrl": "#",
+    "status": "in-progress",
+    "duration": "1 month",
+    "challenges": "Creating responsive charts and handling large datasets",
+    "solutions": "Implemented virtual scrolling and data pagination for performance"
+  },
+  {
+    "id": 4,
+    "title": "Task Management App",
+    "name": "Collaborative Project Management",
+    "description": "A collaborative task management application with team features, real-time updates, and project tracking capabilities.",
+    "img": "/src/assets/project4.png",
+    "category": "fullstack",
+    "technologies": ["React", "Node.js", "Socket.io", "MongoDB", "JWT"],
+    "features": [
+      "Team collaboration",
+      "Real-time updates",
+      "Task assignment",
+      "Progress tracking",
+      "File sharing"
+    ],
+    "liveUrl": "#",
+    "githubUrl": "#",
+    "status": "completed",
+    "duration": "2.5 months",
+    "challenges": "Real-time collaboration and conflict resolution",
+    "solutions": "Used Socket.io for real-time updates and implemented operational transformation"
+  },
+  {
+    "id": 5,
+    "title": "Weather Dashboard",
+    "name": "Interactive Weather Application",
+    "description": "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
+    "img": "/src/assets/project5.png",
+    "category": "frontend",
+    "technologies": ["React", "OpenWeather API", "Mapbox", "Chart.js", "CSS3"],
+    "features": [
+      "Location-based weather",
+      "7-day forecast",
+      "Interactive maps",
+      "Weather alerts",
+      "Historical data"
+    ],
+    "liveUrl": "#",
+    "githubUrl": "#",
+    "status": "completed",
+    "duration": "3 weeks",
+    "challenges": "Handling multiple API calls and data visualization",
+    "solutions": "Implemented caching strategy and optimized API calls"
+  },
+  {
+    "id": 6,
+    "title": "Portfolio Website",
+    "name": "Personal Portfolio with CMS",
+    "description": "A modern portfolio website with content management system, blog functionality, and contact form integration.",
+    "img": "/src/assets/project6.png",
+    "category": "fullstack",
+    "technologies": ["Next.js", "Sanity CMS", "Tailwind CSS", "Framer Motion", "Vercel"],
+    "features": [
+      "Content management",
+      "Blog system",
+      "Contact form",
+      "SEO optimization",
+      "Performance optimization"
+    ],
+    "liveUrl": "#",
+    "githubUrl": "#",
+    "status": "completed",
+    "duration": "1 month",
+    "challenges": "SEO optimization and content management integration",
+    "solutions": "Used Next.js SSG and Sanity CMS for optimal performance and content management"
+  }
+]

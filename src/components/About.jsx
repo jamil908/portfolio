@@ -10,7 +10,7 @@ const About = () => {
           <div>
                 <div className="text-gray-300 my-3" id='about'>
                     <h3 className=" md:text-4xl w-fit mx-auto text-xl font-semibold mb-5">About <span>Me</span></h3>
-                    <p className="text-justify leading-7 w-8/12 mx-auto">
+                    <p className="text-justify justify-center w-full p-2   md:w-8/12 mx-auto">
                     Hi there! 👋 I’m a passionate and dedicated Computer Science and Engineering student with a strong interest in web development and software engineering. I enjoy building dynamic, user-friendly applications that solve real-world problems and enhance user experiences. My journey in programming has led me to explore modern technologies such as React, Node.js, MongoDB, and Firebase, and I’m constantly learning new tools to improve my craft.
                     </p>
                 </div>
@@ -90,6 +90,13 @@ const About = () => {
                   style={{ height: "120px", width: "120px" }}
                 />
                 <span>DaisyUI</span>
+              </div>
+              <div>
+                <SiTypescript
+                  className="text-yellow-200 animate-pulse"
+                  style={{ height: "120px", width: "120px" }}
+                />
+                <span>Typescript</span>
               </div>
             
               <div>

@@ -31,10 +31,10 @@ const Contact = () => {
               </a>
               {/* Email */}
               <a
-                href="mailto:md3711451@gmail.com"
+                href="mailto:jamilhossainrafi@gmail.com"
                 className="flex items-center gap-2 text-lg hover:text-blue-300 transition-all duration-300"
               >
-                📧 md3711451@gmail.com
+                📧 jamilhossainrafi@gmail.com
               </a>
             </div>
           </div>
