@@ -1,6 +1,6 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import projects from "../data/project.json";
+import projects from "../data/enhanced-projects.json";
 import { FiExternalLink, FiGithub, FiEye } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -86,7 +86,7 @@ const EnhancedPortfolio = () => {
                 />
 
                 {/* Overlay */}
-<div className="absolute inset-0 pointer-events-none border-2 border-transparent group-hover:border-purple-500/20 rounded-2xl transition-colors duration-300" />
+                <div className="absolute inset-0 pointer-events-none border-2 border-transparent group-hover:border-purple-500/20 rounded-2xl transition-colors duration-300" />
 
 
                 {/* Action Buttons */}

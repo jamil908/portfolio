@@ -1,10 +1,11 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
-import { DiCss3, DiHtml5, DiJavascript1, DiNodejsSmall, DiReact, DiMongodb } from 'react-icons/di';
-import { RiTailwindCssFill } from 'react-icons/ri';
+import { DiJavascript1, DiNodejsSmall, DiReact, DiMongodb } from 'react-icons/di';
+
 import { SiExpress, SiTypescript } from 'react-icons/si';
 import { FaCode, FaProjectDiagram, FaCoffee, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+import { TbBrandNextjs } from 'react-icons/tb';
 
 const EnhancedAbout = () => {
   const stats = [
@@ -15,6 +16,7 @@ const EnhancedAbout = () => {
   ];
 
   const techStack = [
+    { name: "Next.js", icon: <TbBrandNextjs className="text-blue-400" />, level: 90 },
     { name: "React", icon: <DiReact className="text-blue-400" />, level: 90 },
     { name: "JavaScript", icon: <DiJavascript1 className="text-yellow-500" />, level: 85 },
     { name: "Node.js", icon: <DiNodejsSmall className="text-green-500" />, level: 80 },

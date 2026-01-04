@@ -2,18 +2,15 @@ import React from "react";
 import profilepic from "../assets/profile.jpg";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
-import {
-  AiOutlineGithub,
-  AiOutlineInstagram,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import { FaGithubSquare, FaInstagram, FaFacebook } from "react-icons/fa";
+import { LiaLinkedin } from "react-icons/lia";
 import { HiArrowDown } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 const EnhancedHero = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center max-w-[1200px] mx-auto px-6 md:px-12 relative overflow-hidden">
+    <div className="min-h-screen pt-10 flex flex-col justify-center max-w-[1200px] mx-auto px-6 md:px-12 relative overflow-hidden">
       {/* Main Content */}
       <div className="grid md:grid-cols-2 place-items-center gap-12">
         {/* Left Section */}
@@ -74,7 +71,7 @@ const EnhancedHero = () => {
             transition={{ delay: 0.8, duration: 0.6 }}
             className="text-lg text-muted-foreground max-w-lg leading-relaxed"
           >
-            Passionate about creating exceptional digital experiences through clean code, 
+            Passionate about creating exceptional digital experiences through clean code,
             innovative design, and cutting-edge technologies.
           </motion.p>
 
@@ -83,32 +80,58 @@ const EnhancedHero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 pt-4"
+            className="flex flex-col sm:flex-row gap-4 pt-4 relative z-50"
           >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <button
+              onClick={() => {
+                console.log('Let\'s Work Together clicked');
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                  });
+                } else {
+                  console.log('Contact section not found');
+                }
+              }}
+              className="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25 hover:scale-105 transform relative z-50"
+              style={{
+                cursor: 'pointer',
+                pointerEvents: 'auto',
+                userSelect: 'none'
+              }}
             >
-              <Link
-                to="contact"
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="inline-block px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/25 cursor-pointer"
-              >
-                Let's Work Together
-              </Link>
-            </motion.div>
-            
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/Resume.pdf"
-              download="Jamil_Hossain_Resume.pdf"
-              className="px-8 py-3 border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white font-semibold rounded-lg transition-all duration-300"
+              Let's Work Together
+            </button>
+
+            <button
+              onClick={() => {
+                console.log('Resume download clicked');
+                // Try multiple paths for the resume
+                const paths = ['/Resume.pdf', './Resume.pdf', '/public/Resume.pdf'];
+
+                paths.forEach((path, index) => {
+                  setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = path;
+                    link.download = 'Jamil_Hossain_Resume.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    console.log(`Tried downloading from: ${path}`);
+                  }, index * 100);
+                });
+              }}
+              className="px-8 py-3 border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 transform relative z-50"
+              style={{
+                cursor: 'pointer',
+                pointerEvents: 'auto',
+                userSelect: 'none'
+              }}
             >
               Download Resume
-            </motion.a>
+            </button>
           </motion.div>
 
           {/* Social Links */}
@@ -116,35 +139,56 @@ const EnhancedHero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.6 }}
-            className="flex gap-6 pt-4"
+            className="flex gap-6 pt-4 relative z-50"
           >
-            <motion.a
-              whileHover={{ scale: 1.2, y: -2 }}
-              href="https://www.linkedin.com/in/jamil-hossain-rafi-05feb/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-3xl text-muted-foreground hover:text-blue-500 transition-colors"
-            >
-              <AiOutlineLinkedin />
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.2, y: -2 }}
+            <a
               href="https://github.com/jamil908"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-3xl text-muted-foreground hover:text-gray-900 dark:hover:text-white transition-colors"
+              className="text-3xl text-muted-foreground hover:text-blue-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:-translate-y-1 inline-block relative z-50"
+              onClick={(e) => {
+                console.log('GitHub clicked');
+                window.open('https://github.com/jamil908', '_blank');
+              }}
             >
-              <AiOutlineGithub />
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.2, y: -2 }}
-              href="https://www.instagram.com/"
+              <FaGithubSquare />
+            </a>
+            <a
+              href="https://www.instagram.com/capatain_rafi/profilecard/?igsh=enQ4ZTJydW5lODg2"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-3xl text-muted-foreground hover:text-pink-500 transition-colors"
+              className="text-3xl text-muted-foreground hover:text-pink-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:-translate-y-1 inline-block relative z-50"
+              onClick={(e) => {
+                console.log('Instagram clicked');
+                window.open('https://www.instagram.com/capatain_rafi/profilecard/?igsh=enQ4ZTJydW5lODg2', '_blank');
+              }}
             >
-              <AiOutlineInstagram />
-            </motion.a>
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jamil-hossain-rafi-86780633b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-3xl text-muted-foreground hover:text-blue-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:-translate-y-1 inline-block relative z-50"
+              onClick={(e) => {
+                console.log('LinkedIn clicked');
+                window.open('https://www.linkedin.com/in/jamil-hossain-rafi-86780633b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank');
+              }}
+            >
+              <LiaLinkedin />
+            </a>
+            <a
+              href="https://www.facebook.com/md.shaksaadi?mibextid=ZbWKwL"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-3xl text-muted-foreground hover:text-blue-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:-translate-y-1 inline-block relative z-50"
+              onClick={(e) => {
+                console.log('Facebook clicked');
+                window.open('https://www.facebook.com/md.shaksaadi?mibextid=ZbWKwL', '_blank');
+              }}
+            >
+              <FaFacebook />
+            </a>
           </motion.div>
         </motion.div>
 
@@ -158,14 +202,14 @@ const EnhancedHero = () => {
           <div className="relative w-80 h-80 mx-auto">
             {/* Gradient Background */}
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-2xl opacity-20 animate-pulse"></div>
-            
+
             {/* Profile Image */}
             <img
               src={profilepic}
               alt="Jamil Hossain"
               className="relative z-10 w-full h-full object-cover rounded-full border-4 border-purple-500/30 shadow-2xl"
             />
-            
+
             {/* Floating Elements */}
             <motion.div
               animate={{ y: [-10, 10, -10] }}
@@ -186,15 +230,23 @@ const EnhancedHero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50"
       >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="text-muted-foreground"
+        <Link
+          to="about"
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="cursor-pointer"
         >
-          <HiArrowDown size={24} />
-        </motion.div>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="text-muted-foreground hover:text-purple-500 transition-colors"
+          >
+            <HiArrowDown size={24} />
+          </motion.div>
+        </Link>
       </motion.div>
 
       {/* Shiny Effect */}

@@ -1,6 +1,17 @@
 [
     {
       "id": 1,
+      "img": "https://i.ibb.co/fdp4QYg/DALL-E-2025-01-04-14-50-54-A-modern-and-sleek-logo-design-for-BPL-featuring-bold-geometric-typograph.webp",
+      "title": "Parcel Delivery Platform",
+      "name": "Complete Parcel Delivery Management System",
+      "description": "A complete parcel delivery management system that connects customers, delivery personnel, and admins on a unified platform. Users can book deliveries, track shipments in real-time, and manage their parcels efficiently. Features user authentication with role-based access (Customer, Delivery Personnel, Admin), real-time parcel tracking and status updates, payment integration with Stripe for secure transactions, admin dashboard for delivery management and analytics, and responsive design for mobile and desktop.",
+      "category": "fullstack",
+      "technologies": ["React.js", "Redux", "TypeScript", "Tailwind CSS", "JWT", "Axios", "Node.js", "Express.js", "MongoDB", "Stripe"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "id": 2,
       "img": "https://i.ibb.co.com/1Y2rTzP5/screencapture-local-guide-frontend-orcin-vercel-app-2025-12-29-14-35-28.png",
       "title": "Local Guide Tour Management",
       "name": "Full Stack Tour Management Platform",
@@ -11,7 +22,7 @@
       "githubUrl": "https://github.com/jamil908/local-guide-platform-frontencd"
     },
     {
-      "id": 2,
+      "id": 3,
       "img": "https://i.ibb.co/Gv5V9yDn/Screenshot-2025-05-23-005045.png",
       "title": "Medicine Vendor Platform",
       "name": "Pharmaceutical Inventory Management System",
@@ -22,7 +33,7 @@
       "githubUrl": "https://github.com/jamil908/medicine-vendor-client-side"
     },
     {
-      "id": 3,
+      "id": 4,
       "img": "https://i.ibb.co/mcMwyXN/mextsteplogo.webp",
       "title": "Next Step Guide",
       "name": "Sports Equipment Management Platform",
@@ -33,7 +44,7 @@
       "githubUrl": "https://github.com/jamil908/b10-a-11-client-side-public"
     },
     {
-      "id": 4,
+      "id": 5,
       "img": "https://i.ibb.co/8NGLm30/5c6dcef8-32eb-4aa8-89f1-8ba509a9f3e2.webp",
       "title": "Sports Equipment Inventory",
       "name": "Inventory Management System",
@@ -44,7 +55,7 @@
       "githubUrl": "https://github.com/programming-hero-web-course2/b10-a10-client-side-jamil908"
     },
     {
-      "id": 5,
+      "id": 6,
       "img": "https://i.ibb.co/VCdRNDN/41549245-aa57-4971-bc2b-acb4ede54fad.webp",
       "title": "Career Counseling Platform",
       "name": "Professional Career Guidance System",
@@ -55,7 +66,7 @@
       "githubUrl": "https://github.com/programming-hero-web-course1/b10-a9-authentication-jamil908"
     },
     {
-      "id": 6,
+      "id": 7,
       "img": "https://i.ibb.co/TcvJ5pg/DALL-E-2025-01-04-14-40-38-A-modern-and-futuristic-arrangement-featuring-a-laptop-mobile-phone-wirel.webp",
       "title": "Gadget Heaven",
       "name": "E-Commerce Electronics Store",
@@ -66,7 +77,7 @@
       "githubUrl": "https://github.com/programming-hero-web-course2/b10a8-gadget-heaven-jamil908"
     },
     {
-      "id": 7,
+      "id": 8,
       "img": "https://i.ibb.co/fdp4QYg/DALL-E-2025-01-04-14-50-54-A-modern-and-sleek-logo-design-for-BPL-featuring-bold-geometric-typograph.webp",
       "title": "BPL Team Manager",
       "name": "Cricket Team Management System",

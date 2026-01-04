@@ -7,9 +7,29 @@ import {
   DiNodejsSmall,
   DiMongodb,
   DiGithubBadge,
+  DiPostgresql,
 } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiDaisyui, SiTypescript } from "react-icons/si";
+import {
+  SiDaisyui,
+  SiTypescript,
+  SiNextdotjs,
+  SiRedux,
+  SiVite,
+  SiExpress,
+  SiPrisma,
+  SiStripe,
+  SiPostman,
+  SiVercel,
+  SiNetlify,
+  SiFirebase,
+  SiReactquery,
+  SiAxios,
+  SiJsonwebtokens,
+  SiPassport,
+  SiMongoose,
+} from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -20,22 +40,46 @@ const skills = [
   {
     category: "Frontend",
     technologies: [
-      { name: "HTML", icon: <DiHtml5 className="text-orange-600" /> },
-      { name: "CSS", icon: <DiCss3 className="text-blue-600" /> },
-      { name: "Tailwind", icon: <RiTailwindCssFill className="text-pink-600" /> },
-      { name: "DaisyUI", icon: <SiDaisyui className="text-blue-400" /> },
+      { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+      { name: "React.js", icon: <DiReact className="text-blue-500" /> },
+      { name: "Tailwind CSS", icon: <RiTailwindCssFill className="text-cyan-400" /> },
       { name: "JavaScript", icon: <DiJavascript1 className="text-yellow-500" /> },
-      { name: "React", icon: <DiReact className="text-blue-500" /> },
-      { name: "Typescript", icon: <SiTypescript className="text-blue-500" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
+      { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
+      { name: "Axios", icon: <SiAxios className="text-blue-400" /> },
+      { name: "Vite", icon: <SiVite className="text-purple-400" /> },
+      { name: "TanStack Query", icon: <SiReactquery className="text-red-500" /> },
     ],
   },
   {
-    category: "Fullstack",
+    category: "Backend",
     technologies: [
       { name: "Node.js", icon: <DiNodejsSmall className="text-green-500" /> },
+      { name: "Express.js", icon: <SiExpress className="text-gray-400" /> },
+      { name: "REST API", icon: <TbApi className="text-orange-500" /> },
+      { name: "Mongoose", icon: <SiMongoose className="text-red-600" /> },
+      { name: "JWT", icon: <SiJsonwebtokens className="text-pink-500" /> },
+      { name: "Passport.js", icon: <SiPassport className="text-green-400" /> },
+    ],
+  },
+  {
+    category: "Database",
+    technologies: [
       { name: "MongoDB", icon: <DiMongodb className="text-green-600" /> },
-      { name: "React", icon: <DiReact className="text-blue-500" /> },
+      { name: "PostgreSQL", icon: <DiPostgresql className="text-blue-600" /> },
+      { name: "Prisma", icon: <SiPrisma className="text-cyan-400" /> },
+    ],
+  },
+  {
+    category: "Other",
+    technologies: [
+      { name: "Git", icon: <DiGithubBadge className="text-orange-600" /> },
       { name: "GitHub", icon: <DiGithubBadge className="text-gray-600" /> },
+      { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
+      { name: "Stripe API", icon: <SiStripe className="text-purple-500" /> },
+      { name: "Vercel", icon: <SiVercel className="text-white" /> },
+      { name: "Netlify", icon: <SiNetlify className="text-cyan-400" /> },
+      { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
     ],
   },
 ];

@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import projects from "../data/project.json";
+import projects from "../data/enhanced-projects.json";
 import NavberTwo from "./NavberTwo";
 import Footer from "./Footer";
 import { motion } from "framer-motion";

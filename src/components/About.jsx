@@ -1,6 +1,7 @@
-import React from 'react';
+
 import Marquee from 'react-fast-marquee';
 import { DiCss3, DiHtml5, DiJavascript1, DiNodejsSmall, DiReact } from 'react-icons/di';
+import { FcNext } from 'react-icons/fc';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { SiDaisyui, SiExpress, SiTypescript } from 'react-icons/si';
 
@@ -69,6 +70,13 @@ const About = () => {
                   style={{ height: "120px", width: "120px" }}
                 />
                 <span>React</span>
+              </div>
+              <div>
+                <FcNext
+                  className="text-blue-400 animate-spin"
+                  style={{ height: "120px", width: "120px" }}
+                />
+                <span>Next.js</span>
               </div>
               <div>
                 <DiNodejsSmall
