@@ -4,7 +4,7 @@
     "title": "Parcel Delivery Platform",
     "name": "Complete Parcel Delivery Management System",
     "description": "A complete parcel delivery management system that connects customers, delivery personnel, and admins on a unified platform. Users can book deliveries, track shipments in real-time, and manage their parcels efficiently.",
-    "img": "/src/assets/percel.png",
+    "img": "https://i.ibb.co.com/k63GRR9R/percel.png",
     "category": "fullstack",
     "technologies": ["React.js", "Redux", "TypeScript", "Tailwind CSS", "JWT", "Axios", "Node.js", "Express.js", "MongoDB", "Stripe"],
     "features": [
@@ -29,7 +29,7 @@
     "title": "Local Guide Tour Management",
     "name": "Full Stack Tour Management Platform",
     "description": "A comprehensive tour management platform built with Next.js and Prisma, featuring real-time booking, guide management, and payment processing. Includes admin dashboard, user authentication, and responsive design.",
-    "img": "/src/assets//tour.png",
+    "img": "https://i.ibb.co.com/ccdgbvCb/Screenshot-2026-01-05-103130.png",
     "category": "fullstack",
     "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "TypeScript"],
     "features": [
@@ -51,7 +51,7 @@
     "title": "Medicine Vendor Platform",
     "name": "Pharmaceutical Inventory Management System",
     "description": "A comprehensive platform for managing pharmaceutical inventories, showcasing advertised products, and generating sales reports. Features dynamic querying, product management, and sales analytics.",
-    "img": "https://i.ibb.co/Gv5V9yDn/Screenshot-2025-05-23-005045.png",
+    "img": "https://i.ibb.co.com/fdBdxKFg/Screenshot-2026-01-06-000441.png",
     "category": "fullstack",
     "technologies": ["React","Axios","Tailwind CSS", "Tanstack query" ,"Node.js", "MongoDB", "Express.js", "Chart.js"],
     "features": [
@@ -73,7 +73,7 @@
     "title": "E-Commerce Dashboard",
     "name": "Modern Admin Dashboard",
     "description": "A sleek and responsive admin dashboard for e-commerce management with real-time analytics, order tracking, and inventory management.",
-    "img": "/src/assets/project3.png",
+    "img": "https://i.ibb.co.com/wrcRkGtf/project3.png",
     "category": "frontend",
     "technologies": ["React", "TypeScript", "Tailwind CSS", "Chart.js", "Framer Motion"],
     "features": [
@@ -95,7 +95,7 @@
     "title": "Event Management App",
     "name": "Collaborative Project Management",
     "description": "A collaborative task management application with team features, real-time updates, and project tracking capabilities.",
-    "img": "/src/assets/project4.png",
+    "img": "https://i.ibb.co.com/vvHFTGXK/project4.png",
     "category": "fullstack",
     "technologies": ["React", "Node.js", "Socket.io", "MongoDB", "JWT"],
     "features": [
@@ -117,7 +117,7 @@
     "title": "Weather Dashboard",
     "name": "Interactive Weather Application",
     "description": "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
-    "img": "/src/assets/project5.png",
+    "img": "https://i.ibb.co.com/xvk0PqP/project5.png",
     "category": "frontend",
     "technologies": ["React", "OpenWeather API", "Mapbox", "Chart.js", "CSS3"],
     "features": [
@@ -139,7 +139,7 @@
     "title": "Portfolio Website",
     "name": "Personal Portfolio with CMS",
     "description": "A modern portfolio website with content management system, blog functionality, and contact form integration.",
-    "img": "/src/assets/project6.png",
+    "img": "https://i.ibb.co.com/VpTKJNkr/project6.png",
     "category": "fullstack",
     "technologies": ["Next.js", "Sanity CMS", "Tailwind CSS", "Framer Motion", "Vercel"],
     "features": [
